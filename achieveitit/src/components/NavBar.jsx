@@ -5,14 +5,13 @@ import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
   return ( <div>
-      <NavLink to="/" exact className="button" 
+
+    <NavLink to="/reminders" exact className="button" 
     
         activeStyle={{
-          background: "#606c38",
-          // hover:{
-          //   color:'black'
-          // }
-        }}> Home </NavLink>
+        background: "#606c38",
+        }}> Reminders </NavLink>
+
 
       <NavLink to="/quotes" exact className="button" 
     
@@ -38,7 +37,14 @@ export default function NavBar() {
           background: "#606c38",
         }}> Tasks </NavLink>
 
-
+        <NavLink to="/" exact className="button" 
+            
+                activeStyle={{
+                background: "#606c38",
+                // hover:{
+                //   color:'black'
+                // }
+                }}> Home </NavLink>
 
 
 

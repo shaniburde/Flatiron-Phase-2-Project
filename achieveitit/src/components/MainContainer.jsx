@@ -9,9 +9,11 @@ import { Route, Switch } from 'react-router';
 
 
 function MainContainer() {
-  const [tasks, setTasks] = useState('')
-  const [quotes, setQuotes] = useState('')
-  const [reminders, setReminders] = useState('')
+  const [tasks, setTasks] = useState([])
+  const [quotes, setQuotes] = useState([])
+  const [reminders, setReminders] = useState([])
+  const [events, setEvents] = useState([])
+  const [exercises, setExercises] = useState([])
 
 
   // const pickone = 
@@ -34,6 +36,33 @@ function MainContainer() {
       .then(data=>setReminders(data))
   }, [])
 
+  useEffect(()=> {
+    fetch(`http://localhost:8000/events`)
+      .then(r=>r.json())
+      .then(data=>setEvents(data))
+  }, [])
+
+  useEffect(()=> {
+    fetch(`http://localhost:8000/exercises`)
+      .then(r=>r.json())
+      .then(data=>setExercises(data))
+  }, [])
+
+  function addNewTask(newTask){
+    setTasks((prevState) => [...prevState, newTask])
+  }
+
+  function handleDeleteTask(taskToDelete){
+    const updatedTasks = tasks.filter((task) => {
+      if(task.id !== taskToDelete.id) {
+        return task
+      } else {
+        return null
+      }
+    });
+    setTasks(updatedTasks);
+  }
+
 // Figure out a way to make less fetches, 
 // if === path ends in "quotes" 
 
@@ -50,19 +79,28 @@ function MainContainer() {
         </Route>
 
         <Route path='/events'>
-          <Events/> 
+          <Events events={events}/> 
         </Route>
 
         <Route path ="/todolist">
-          <TodoList tasks={tasks}/> 
+          <TodoList 
+            addNewTask={addNewTask} 
+            tasks={tasks}
+            handleDeleteTask={handleDeleteTask}/> 
         </Route>
 
         <Route path="/exercises">
-          <Exercises/> 
+          <Exercises exercises={exercises}/> 
         </Route>
 
         <Route path="/">
-          <Home />
+          <Home 
+          quotes={quotes}
+          reminders={reminders}
+          events={events}
+          tasks={tasks}
+          exercises={exercises}
+           />
         </Route>
         
       </Switch>
