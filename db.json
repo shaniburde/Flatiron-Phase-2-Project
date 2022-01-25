@@ -1,0 +1,77 @@
+{
+        "quotes": [
+          {
+            "id": 1,
+            "quote": "Just do it",
+            "dateId": 2
+          },
+          {
+            "id": 2,
+            "quote": "Don't just do it",
+            "dateId": 2
+          }
+        ],
+
+        "reminders": [
+          {
+            "id": 1,
+            "reminder": "Water plants by Thursday",
+            "dateId": 2
+          },
+          {
+            "id": 2,
+            "reminder": "Call Grandma <3 ",
+            "dateId": 2
+          }
+        ],
+
+        "events": [
+            {
+              "id": 1,
+              "event": "John Doe's Wedding",
+              "dateId": 2
+            },
+            {
+              "id": 2,
+              "event": "London Fashion Week Starts Today",
+              "dateId": 2
+            }
+          ],
+
+          "exercises": [
+            {
+              "id": 1,
+              "exercise": "30-second bicycle crunches",
+              "dateId": 2
+            },
+            {
+              "id": 2,
+              "exercise": "10 min Jump-rope",
+              "dateId": 2
+            }
+          ],
+
+          "tasks": [
+            {
+              "id": 1,
+              "task": "Go grocery shopping",
+              "completed": true
+            },
+            {
+              "id": 2,
+              "task": "Do laundry",
+              "completed": false
+            }
+          ],
+        
+        "dates": [
+            {
+                "id": 1,
+                "date": "2022-01-24"
+            },
+            {
+                "id": 2,
+                "date": "2022-01-25"
+            }
+        ]
+      }
