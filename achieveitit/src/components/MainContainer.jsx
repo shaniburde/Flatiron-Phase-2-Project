@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from './Home';
 import Quotes from "./Quotes";
 import TodoList from "./TodoList";
 import Reminders from "./Reminders";
 import Events from "./Events";
 import Exercises from "./Exercises";
-import { Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 
 
 function MainContainer() {
@@ -18,43 +18,43 @@ function MainContainer() {
 
   // const pickone = 
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/tasks`)
-      .then(r=>r.json())
-      .then(data=>setTasks(data))
+      .then(r => r.json())
+      .then(data => setTasks(data))
   }, [])
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/quotes`)
-      .then(r=>r.json())
-      .then(data=>setQuotes(data))
+      .then(r => r.json())
+      .then(data => setQuotes(data))
   }, [])
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/reminders`)
-      .then(r=>r.json())
-      .then(data=>setReminders(data))
+      .then(r => r.json())
+      .then(data => setReminders(data))
   }, [])
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/events`)
-      .then(r=>r.json())
-      .then(data=>setEvents(data))
+      .then(r => r.json())
+      .then(data => setEvents(data))
   }, [])
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/exercises`)
-      .then(r=>r.json())
-      .then(data=>setExercises(data))
+      .then(r => r.json())
+      .then(data => setExercises(data))
   }, [])
 
-  function addNewTask(newTask){
+  function addNewTask(newTask) {
     setTasks((prevState) => [...prevState, newTask])
   }
 
-  function handleDeleteTask(taskToDelete){
+  function handleDeleteTask(taskToDelete) {
     const updatedTasks = tasks.filter((task) => {
-      if(task.id !== taskToDelete.id) {
+      if (task.id !== taskToDelete.id) {
         return task
       } else {
         return null
@@ -63,46 +63,46 @@ function MainContainer() {
     setTasks(updatedTasks);
   }
 
-// Figure out a way to make less fetches, 
-// if === path ends in "quotes" 
+  // Figure out a way to make less fetches, 
+  // if === path ends in "quotes" 
 
   return (
     <div>
       <Switch>
 
         <Route path='/quotes'>
-          <Quotes quotes={quotes}/> 
+          <Quotes quotes={quotes} />
         </Route>
 
         <Route path='/reminders'>
-          <Reminders reminders={reminders}/> 
+          <Reminders reminders={reminders} />
         </Route>
 
         <Route path='/events'>
-          <Events events={events}/> 
+          <Events events={events} />
         </Route>
 
-        <Route path ="/todolist">
-          <TodoList 
-            addNewTask={addNewTask} 
+        <Route path="/todolist">
+          <TodoList
+            addNewTask={addNewTask}
             tasks={tasks}
-            handleDeleteTask={handleDeleteTask}/> 
+            handleDeleteTask={handleDeleteTask} />
         </Route>
 
         <Route path="/exercises">
-          <Exercises exercises={exercises}/> 
+          <Exercises exercises={exercises} />
         </Route>
 
         <Route path="/">
-          <Home 
-          quotes={quotes}
-          reminders={reminders}
-          events={events}
-          tasks={tasks}
-          exercises={exercises}
-           />
+          <Home
+            quotes={quotes}
+            reminders={reminders}
+            events={events}
+            tasks={tasks}
+            exercises={exercises}
+          />
         </Route>
-        
+
       </Switch>
     </div>
   )
