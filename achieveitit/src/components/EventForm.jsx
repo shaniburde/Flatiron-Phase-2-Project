@@ -16,7 +16,8 @@ const [eventDate, setEventDate] = useState('');
     e.preventDefault();
     const newEventObj = {
         event: newEvent,
-        date: eventDate
+        date: eventDate,
+        dateId: 1,
           }
           fetch("http://localhost:8000/events",{
             method: 'POST',

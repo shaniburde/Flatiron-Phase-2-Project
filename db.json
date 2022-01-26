@@ -3,48 +3,163 @@
     {
       "id": 1,
       "quote": "Just do it",
-      "dateId": 2
+      "dateId": 1
     },
     {
       "id": 2,
-      "quote": "Don't just do it",
+      "quote": "Don't let the day get away!",
       "dateId": 2
+    },
+    {
+      "id": 3,
+      "quote": "With great power, there must also come great responsibility",
+      "dateId": 3
+    },
+    {
+      "id": 4,
+      "quote": "Is it your own destiny? Or is it a destiny someone else has tried to force on you?",
+      "dateId": 4
+    },
+    {
+      "id": 5,
+      "quote": "Give yourself some credit for the days you made it when you thought you couldn't.",
+      "dateId": 5
+    },
+    {
+      "id": 6,
+      "quote": "We accept the love we think we deserve.",
+      "dateId": 6
+    },
+    {
+      "id": 7,
+      "quote": "Don't believe in yourself. Believe in me! Believe in the [Me] who believes in you!.",
+      "dateId": 7
+    },
+    {
+      "id": 8,
+      "quote": "Staying positive doesn't mean you have to be happy all the time. It means that even on hard days you know that there are better ones coming.",
+      "dateId": 8
+    },
+    {
+      "id": 9,
+      "quote": "Sometimes the bad things that happen in our lives put us directly on the path to the best things that will ever happen to us.",
+      "dateId": 9
+    },
+    {
+      "id": 10,
+      "quote": "And like the moon, we must go through phases of emptiness to feel full again.",
+      "dateId": 10
+    },
+    {
+      "id": 11,
+      "quote": "It's better to feel pain than nothing at all; the opposite of love's indifference.",
+      "dateId": 11
+    },
+    {
+      "id": 12,
+      "quote": "Where you are in a year from now is a reflection of the choices you make today.",
+      "dateId": 12
+    },
+    {
+      "id": 13,
+      "quote": "One of the most courageous decisions you'll ever make is to finally let go of what is hurting your heart and soul.",
+      "dateId": 13
+    },
+    {
+      "id": 14,
+      "quote": "Progress, not perfection.",
+      "dateId": 14
+    },
+    {
+      "id": 15,
+      "quote": "And no amount of mermaid magic ...or managerial promotion ...or some other third thing...can make me anything more than what I really am inside: A kid..",
+      "dateId": 15
+    },
+    {
+      "id": 16,
+      "quote": "We cannot become what we want by remaining what we are.",
+      "dateId": 16
+    },
+    {
+      "id": 17,
+      "quote": "One day you will tell your story of how you overcame what you went through and it will be someone else's survival guide.",
+      "dateId": 17
+    },
+    {
+      "id": 18,
+      "quote": "If you want to fly, give up everything that weighs you down.",
+      "dateId": 18
+    },
+    {
+      "id": 19,
+      "quote": "Respect yourself enough to walk away from anything that no longer serves you, grows you, or makes you happy.",
+      "dateId": 19
+    },
+    {
+      "id": 20,
+      "quote": "If you need something to believe in, start with yourself.",
+      "dateId": 20
+    },
+    {
+      "id": 21,
+      "quote": "There’s no shame in falling down! True shame is to not stand up again!",
+      "dateId": 21
+    },
+    {
+      "id": 22,
+      "quote": "Everybody dies, but not everybody lives.",
+      "dateId": 22
+    },
+    {
+      "id": 23,
+      "quote": "It's better to look ahead and prepare, than look back and regret.",
+      "dateId": 23
+    },
+    {
+      "id": 24,
+      "quote": "Never let the sadness of your past and the fear of your future ruin the happiness of your present.",
+      "dateId": 24
+    },
+    {
+      "id": 25,
+      "quote": "A Lesson Without Pain Is Meaningless. That’s Because No One Can Gain Without Sacrificing Something. But By Enduring That Pain And Overcoming It, He Shall Obtain A Powerful, Unmatched Heart... A FullMetal Heart.",
+      "dateId": 25
     }
   ],
   "reminders": [
     {
       "id": 1,
       "reminder": "Water plants by Thursday",
-      "date": "2022-02-25"
+      "date": "2022-01-25"
     },
     {
       "id": 2,
       "reminder": "Call Grandma <3 ",
-      "date": "2022-02-25"
+      "date": "2022-01-25"
     },
     {
-      "reminder": "walk the dog",
-      "date": "2022-02-24",
+      "reminder": "Walk the dog",
+      "date": "2022-01-24",
       "id": 3
     },
     {
-      "reminder": "Princess Cutie",
+      "reminder": "Order Birthday Gifts ",
       "date": "2022-01-28",
       "id": 4
     },
     {
-      "reminder": "Shani",
+      "reminder": "Rent due in 4 days",
       "date": "2022-01-27",
       "id": 5
     },
     {
-      "reminder": "Shani",
+      "reminder": "Give fluffy a bath",
       "date": "2022-01-25",
       "id": 6
     },
     {
-      "reminder": "Mother-in-Law Plant",
-      "date": "2022-01-12",
+      "reminder": "Rake the leaves 🥺",
+      "date": "2022-01-28",
       "id": 7
     }
   ],
@@ -52,29 +167,91 @@
     {
       "id": 1,
       "event": "John Doe's Wedding",
-      "date": "2022-01-12"
+      "date": "2022-01-24",
+      "dateId": 1
     },
     {
       "id": 2,
       "event": "London Fashion Week Starts Today",
-      "date": "2022-01-12"
+      "date": "2022-01-24",
+      "dateId": 2
     },
     {
       "event": "Lady Gaga concert",
       "date": "2022-01-28",
-      "id": 3
+      "id": 3,
+      "dateId": 3
+    },
+    {
+      "event": "Concert",
+      "date": "2022-01-25",
+      "id": 4,
+      "dateId": 4
+    },
+    {
+      "event": "Nets Game at Barclay's Center",
+      "date": "2022-01-31",
+      "id": 5,
+      "dateId": 8
+    },
+    {
+      "event": "Concert",
+      "date": "2022-01-27",
+      "dateId": 3,
+      "id": 6
+    },
+    {
+      "event": "Flight to LA",
+      "date": "2022-01-24",
+      "dateId": 1,
+      "id": 7
     }
   ],
   "exercises": [
     {
       "id": 1,
       "exercise": "30-second bicycle crunches",
-      "dateId": 2
+      "dateId": 1
     },
     {
       "id": 2,
       "exercise": "10 min Jump-rope",
       "dateId": 2
+    },
+    {
+      "id": 3,
+      "exercise": "500 Push-ups",
+      "dateId": 3
+    },
+    {
+      "id": 4,
+      "exercise": "26.2 Mile Casual Run",
+      "dateId": 4
+    },
+    {
+      "id": 5,
+      "exercise": "Rest today, you deserve it 😁 ",
+      "dateId": 5
+    },
+    {
+      "id": 6,
+      "exercise": "500 Pull-ups",
+      "dateId": 6
+    },
+    {
+      "id": 7,
+      "exercise": "3000 Handstand Push-ups",
+      "dateId": 7
+    },
+    {
+      "id": 8,
+      "exercise": "5 hour wall-sits",
+      "dateId": 8
+    },
+    {
+      "id": 9,
+      "exercise": "Climb Mt. Everest (should be easy...)",
+      "dateId": 9
     }
   ],
   "tasks": [
@@ -97,7 +274,7 @@
     },
     {
       "reminder": "Clean my room",
-      "date": "2022-02-24",
+      "date": "2022-01-24",
       "id": 7
     }
   ],
@@ -109,6 +286,166 @@
     {
       "id": 2,
       "date": "2022-01-25"
+    },
+    {
+      "id": 3,
+      "date": "2022-01-26"
+    },
+    {
+      "id": 4,
+      "date": "2022-01-27"
+    },
+    {
+      "id": 5,
+      "date": "2022-01-28"
+    },
+    {
+      "id": 6,
+      "date": "2022-01-29"
+    },
+    {
+      "id": 7,
+      "date": "2022-01-30"
+    },
+    {
+      "id": 8,
+      "date": "2022-01-31"
+    },
+    {
+      "id": 9,
+      "date": "2022-02-01"
+    },
+    {
+      "id": 10,
+      "date": "2022-02-02"
+    },
+    {
+      "id": 11,
+      "date": "2022-02-03"
+    },
+    {
+      "id": 12,
+      "date": "2022-02-04"
+    },
+    {
+      "id": 13,
+      "date": "2022-01-05"
+    },
+    {
+      "id": 14,
+      "date": "2022-02-06"
+    },
+    {
+      "id": 15,
+      "date": "2022-02-07"
+    },
+    {
+      "id": 16,
+      "date": "2022-02-08"
+    },
+    {
+      "id": 17,
+      "date": "2022-02-09"
+    },
+    {
+      "id": 18,
+      "date": "2022-02-10"
+    },
+    {
+      "id": 19,
+      "date": "2022-02-11"
+    },
+    {
+      "id": 20,
+      "date": "2022-02-12"
+    },
+    {
+      "id": 21,
+      "date": "2022-02-13"
+    },
+    {
+      "id": 22,
+      "date": "2022-02-14"
+    },
+    {
+      "id": 23,
+      "date": "2022-02-15"
+    },
+    {
+      "id": 24,
+      "date": "2022-02-16"
+    },
+    {
+      "id": 25,
+      "date": "2022-02-17"
+    },
+    {
+      "id": 26,
+      "date": "2022-02-18"
+    },
+    {
+      "id": 27,
+      "date": "2022-02-19"
+    },
+    {
+      "id": 28,
+      "date": "2022-02-20"
+    },
+    {
+      "id": 29,
+      "date": "2022-02-21"
+    },
+    {
+      "id": 30,
+      "date": "2022-02-22"
+    },
+    {
+      "id": 31,
+      "date": "2022-02-23"
+    },
+    {
+      "id": 32,
+      "date": "2022-02-24"
+    },
+    {
+      "id": 33,
+      "date": "2022-02-25"
+    },
+    {
+      "id": 34,
+      "date": "2022-02-26"
+    },
+    {
+      "id": 35,
+      "date": "2022-02-27"
+    },
+    {
+      "id": 36,
+      "date": "2022-02-28"
+    },
+    {
+      "id": 37,
+      "date": "2022-03-01"
+    },
+    {
+      "id": 38,
+      "date": "2022-03-02"
+    },
+    {
+      "id": 39,
+      "date": "2022-03-03"
+    },
+    {
+      "id": 40,
+      "date": "2022-03-04"
+    },
+    {
+      "id": 41,
+      "date": "2022-03-05"
+    },
+    {
+      "id": 42,
+      "date": "2022-03-06"
     }
   ]
 }

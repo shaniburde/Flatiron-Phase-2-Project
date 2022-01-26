@@ -8,14 +8,14 @@ import Exercises from "./Exercises";
 import { Route, Switch } from 'react-router-dom';
 
 
-function MainContainer() {
+function MainContainer({ count }) {
   const [tasks, setTasks] = useState([])
   const [quotes, setQuotes] = useState([])
   const [reminders, setReminders] = useState([])
   const [events, setEvents] = useState([])
   const [exercises, setExercises] = useState([])
 
-
+// console.log(count)
 
   useEffect(()=> {
     fetch(`http://localhost:8000/tasks`)
@@ -36,16 +36,16 @@ function MainContainer() {
   }, [])
 
   useEffect(()=> {
-    fetch(`http://localhost:8000/events`)
+    fetch(`http://localhost:8000/dates/${count}/events/`)
       .then(r=>r.json())
       .then(data=>setEvents(data))
-  }, [])
+  }, [count])
 
   useEffect(()=> {
-    fetch(`http://localhost:8000/exercises`)
+    fetch(`http://localhost:8000/dates/${count}/exercises/`)
       .then(r=>r.json())
-      .then(data=>setExercises(data))
-  }, [])
+      .then(data=> setExercises(data))
+  }, [count])
 
   function addNewTask(newTask){
     setTasks((prevState) => [...prevState, newTask])
@@ -105,6 +105,7 @@ function MainContainer() {
 
         <Route path="/">
           <Home 
+          count = {count}
           quotes={quotes}
           reminders={reminders}
           events={events}

@@ -11,7 +11,6 @@ export default function EventItem({eventObj}) {
     // color: red;
     // `;
 
-
   return (
   <>
     <table>
