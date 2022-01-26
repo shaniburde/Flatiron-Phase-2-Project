@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from './Home';
 import Quotes from "./Quotes";
 import TodoList from "./TodoList";
@@ -17,22 +17,22 @@ function MainContainer({ count }) {
 
 // console.log(count)
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/tasks`)
-      .then(r=>r.json())
-      .then(data=>setTasks(data))
+      .then(r => r.json())
+      .then(data => setTasks(data))
   }, [])
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/quotes`)
-      .then(r=>r.json())
-      .then(data=>setQuotes(data))
+      .then(r => r.json())
+      .then(data => setQuotes(data))
   }, [])
 
-  useEffect(()=> {
+  useEffect(() => {
     fetch(`http://localhost:8000/reminders`)
-      .then(r=>r.json())
-      .then(data=>setReminders(data))
+      .then(r => r.json())
+      .then(data => setReminders(data))
   }, [])
 
   useEffect(()=> {
@@ -47,7 +47,7 @@ function MainContainer({ count }) {
       .then(data=> setExercises(data))
   }, [count])
 
-  function addNewTask(newTask){
+  function addNewTask(newTask) {
     setTasks((prevState) => [...prevState, newTask])
   }
 
@@ -61,7 +61,7 @@ function MainContainer({ count }) {
 
   function handleDeleteTask(taskToDelete){
     const updatedTasks = tasks.filter((task) => {
-      if(task.id !== taskToDelete.id) {
+      if (task.id !== taskToDelete.id) {
         return task
       } else {
         return null
@@ -70,13 +70,12 @@ function MainContainer({ count }) {
     setTasks(updatedTasks);
   }
 
-
   return (
     <div>
       <Switch>
 
         <Route path='/quotes'>
-          <Quotes quotes={quotes}/> 
+          <Quotes quotes={quotes} />
         </Route>
 
         <Route path='/reminders'>
@@ -92,15 +91,15 @@ function MainContainer({ count }) {
           events={events}/> 
         </Route>
 
-        <Route path ="/todolist">
-          <TodoList 
-            addNewTask={addNewTask} 
+        <Route path="/todolist">
+          <TodoList
+            addNewTask={addNewTask}
             tasks={tasks}
-            handleDeleteTask={handleDeleteTask}/> 
+            handleDeleteTask={handleDeleteTask} />
         </Route>
 
         <Route path="/exercises">
-          <Exercises exercises={exercises}/> 
+          <Exercises exercises={exercises} />
         </Route>
 
         <Route path="/">
@@ -113,7 +112,7 @@ function MainContainer({ count }) {
           exercises={exercises}
            />
         </Route>
-        
+
       </Switch>
     </div>
   )
