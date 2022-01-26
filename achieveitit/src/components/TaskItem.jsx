@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TaskItem({taskObj, handleDeleteTask }) {
     const {id, task} = taskObj
-    console.log(id)
+    // console.log(id)
 
     function handleDelete(){
         fetch(`http://localhost:8000/tasks/${id}`, { 
@@ -15,11 +15,10 @@ export default function TaskItem({taskObj, handleDeleteTask }) {
   return (
   <div>
        <table>
-        <tr>
+        <tr className="table-data">
             <td key={id}>{task} 
             <button onClick={handleDelete} className="delete-task-btn">X</button></td>
         </tr>
-        <br/>
     </table>
   </div>
   );

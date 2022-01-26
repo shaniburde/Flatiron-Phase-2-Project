@@ -11,7 +11,7 @@ function Home({ reminders, quotes, events, exercises, tasks}) {
   return (
     <div>
       <h2> Home Preview of everything</h2>
-      <h4>Quote: {dailyQuote?.quote}</h4>
+      <p>Quote: {dailyQuote?.quote}</p>
       <p>Reminders: {firstReminder?.reminder}</p>
       <p>Tasks: {firstTask?.task} </p>
       <p>Events: {firstEvent?.event}</p>

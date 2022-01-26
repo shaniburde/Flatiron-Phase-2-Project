@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react';
 import Home from './Home';
 import Quotes from "./Quotes";
 import TodoList from "./TodoList";
-import Reminders from "./Reminders";
-import Events from "./Events";
+import ReminderList from "./RemindersList";
+import EventList from "./EventList";
 import Exercises from "./Exercises";
-import { Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 
 
 function MainContainer() {
@@ -16,7 +16,6 @@ function MainContainer() {
   const [exercises, setExercises] = useState([])
 
 
-  // const pickone = 
 
   useEffect(()=> {
     fetch(`http://localhost:8000/tasks`)
@@ -52,6 +51,14 @@ function MainContainer() {
     setTasks((prevState) => [...prevState, newTask])
   }
 
+  function addNewReminder(newReminder){
+    setReminders((prevState) => [...prevState, newReminder])
+  }
+
+  function addNewEvent(newEvent){
+    setEvents((prevState) => [...prevState, newEvent])
+  }
+
   function handleDeleteTask(taskToDelete){
     const updatedTasks = tasks.filter((task) => {
       if(task.id !== taskToDelete.id) {
@@ -63,8 +70,6 @@ function MainContainer() {
     setTasks(updatedTasks);
   }
 
-// Figure out a way to make less fetches, 
-// if === path ends in "quotes" 
 
   return (
     <div>
@@ -75,11 +80,16 @@ function MainContainer() {
         </Route>
 
         <Route path='/reminders'>
-          <Reminders reminders={reminders}/> 
+          <ReminderList
+            reminders={reminders}
+            addNewReminder={addNewReminder}
+          /> 
         </Route>
 
         <Route path='/events'>
-          <Events events={events}/> 
+          <EventList 
+          addNewEvent={addNewEvent}
+          events={events}/> 
         </Route>
 
         <Route path ="/todolist">

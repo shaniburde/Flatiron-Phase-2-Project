@@ -15,24 +15,54 @@
     {
       "id": 1,
       "reminder": "Water plants by Thursday",
-      "dateId": 2
+      "date": "2022-02-25"
     },
     {
       "id": 2,
       "reminder": "Call Grandma <3 ",
-      "dateId": 2
+      "date": "2022-02-25"
+    },
+    {
+      "reminder": "walk the dog",
+      "date": "2022-02-24",
+      "id": 3
+    },
+    {
+      "reminder": "Princess Cutie",
+      "date": "2022-01-28",
+      "id": 4
+    },
+    {
+      "reminder": "Shani",
+      "date": "2022-01-27",
+      "id": 5
+    },
+    {
+      "reminder": "Shani",
+      "date": "2022-01-25",
+      "id": 6
+    },
+    {
+      "reminder": "Mother-in-Law Plant",
+      "date": "2022-01-12",
+      "id": 7
     }
   ],
   "events": [
     {
       "id": 1,
       "event": "John Doe's Wedding",
-      "dateId": 2
+      "date": "2022-01-12"
     },
     {
       "id": 2,
       "event": "London Fashion Week Starts Today",
-      "dateId": 2
+      "date": "2022-01-12"
+    },
+    {
+      "event": "Lady Gaga concert",
+      "date": "2022-01-28",
+      "id": 3
     }
   ],
   "exercises": [
@@ -54,17 +84,21 @@
       "completed": true
     },
     {
-      "id": 2,
-      "task": "Do laundry",
-      "completed": false
-    },
-    {
       "task": "Get delete button to work",
       "id": 4
     },
     {
       "task": "Create Phase 2 Project",
       "id": 5
+    },
+    {
+      "task": "Clean up my room",
+      "id": 6
+    },
+    {
+      "reminder": "Clean my room",
+      "date": "2022-02-24",
+      "id": 7
     }
   ],
   "dates": [
