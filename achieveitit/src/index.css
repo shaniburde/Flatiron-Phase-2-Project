@@ -113,7 +113,7 @@
     border: 1px, black;
     background-color: #faedcd;
     /* background-image: url('https://i.pinimg.com/564x/73/93/91/73939130e8f6bdc984881bfb8e34c22c.jpg'); */
-    text-shadow: white ;
+    text-shadow: rgb(255, 255, 255) ;
     width: 93%;
     height: 20%;
     border-radius: 20px;
@@ -124,8 +124,9 @@
 
   
   .reminder-card {
-    color: #283618;
+    color: #e9ffd0;
     background-color: #7f9172;
+    text-shadow: 1px 2px #2e3526;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
@@ -136,8 +137,9 @@
   }
   
   .task-card {
-    color: #283618;
+    color: #f1ffe2;
     background-color: #b7b7a4;
+    text-shadow: 1px 2px #414937;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
@@ -149,8 +151,9 @@
   
   .exercise-card {
     /* font-size: 20px; */
-    color: #283618;
+    color: #f1fde4;
     background-color: #9b944e;
+    text-shadow: 1px 2px #414937;
     width: fit-content;
     height: fit-content;
     border-radius: 20px;
@@ -167,8 +170,9 @@
   }
   
   .event-card {
-    color: #283618;
+    color: #efffdb;
     background-color: #a5a58d;
+    text-shadow: 1px 2px #414937;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
@@ -355,13 +359,7 @@
     justify-content: center;
   }
 
-  .event-container{
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
+  
   .exercises-list{
     display: flex;
     align-items: center;
@@ -375,7 +373,7 @@
     margin-bottom: 70px;
     background-image: url('https://coconuts.co/wp-content/uploads/2018/01/ground-zero.jpg')
   }
-
+  
   .exercise-header {
     font-weight: bold;
     font-size: 35px;
@@ -390,7 +388,12 @@
     text-shadow: 1px 2px #5dd5eb;
     padding-bottom: 15px;
   }
-
+  
+  .exercise-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .exercise-item {
     font-size: 30px;
     background-color: #5dd5eb;
@@ -401,13 +404,14 @@
     margin-top: 40px;
     color: #1c157e;
     text-shadow: white 1px 0 5px;
+    
   }
-
+  
   .exercise-item:hover {
     background-color: #1c157e;
     color: #5dd5eb;
   }
-
+  
   .event-list {
     display: flex;
     align-items: center;
@@ -419,10 +423,11 @@
     padding: 40px;
     margin-bottom: 70px;
   }
-
-  .exercise-container{
+  
+  .event-container{
+    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* width: 70%; */
   }
-  

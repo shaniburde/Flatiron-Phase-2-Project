@@ -13,15 +13,13 @@ export default function EventItem({eventObj}) {
 
   return (
   <div className="event-container">
-    <table>
-        <tbody>
+    <table className="event-table">
+        <td>
             <tr className="event"> {event}</tr>
-            </tbody>     
-     </table>
-    <table>
-        <tbody>
+        </td>
+        <td>
             <tr className="date">{dateItem}</tr>
-        </tbody>
+        </td>
     </table>
     <br/>
   </div>
