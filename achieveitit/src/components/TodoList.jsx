@@ -14,8 +14,8 @@ export default function TodoList({tasks, addNewTask, handleDeleteTask}) {
     
     )
   return (
-    <div>
-      <h2>To do List:</h2>
+    <div className="task-list">
+      <h2 className="task-header">To-do List:</h2>
        <div>{taskList}</div>
       <TaskForm addNewTask={addNewTask} />
     </div>

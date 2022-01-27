@@ -4,9 +4,9 @@
     box-sizing: border-box;
     text-align: center;
     font-family: 'Didact Gothic', sans-serif;
-    background-color: #fefae0;
   }
   
+
   input {
     width: 25% !important;
     margin-right: 0.25em!important;
@@ -17,11 +17,14 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    /* background-image: linear-gradient(#fefae0, #5b6b49) ; */
+    background-color: #fefae0;
   }
 
   header {
     font-size: 1.6em;
     text-shadow: #5b6b49 1px 0 5px;
+    margin-top:1px;
   }
 
   h1 {
@@ -49,12 +52,6 @@
   
   }
  
-   th, td {
-    border-radius: 5px;
-    background-color: #e9edc9;
-    padding: 20px;
-  }
-
   .event {
     float: left;
     padding: 10px;
@@ -64,7 +61,7 @@
     text-align: left;
     background-color: #e9edc9;
   }
-
+  
   .date {
     float: right;
     padding: 10px;
@@ -75,30 +72,357 @@
     text-align: left;
     background-color: #e9edc9;
   }
-
   
-
+  
   table {
-    /* width: 35%; */
-    /* text-align: center; */
-    margin: 10px;
-    margin-left: auto; 
-    margin-right: auto;
-    display: inline-block;
-    /* background-color: #e9edc9; */
+    font-size: 17px;
+    width: 50%;
+    height: 10%;
+    text-align: center;
+    margin: 5px;
+    color: #fefae0;
+    border-radius: 10px;
+    background-color: rgb(127, 85, 57, 0.8);
+    text-shadow: 1px 2px rgb(59, 38, 24);
+    padding: 20px;
+  }
+  
+  button.delete-task-btn:hover {
+    color:#fefae0;
+    background-color: rgb(122, 13, 13);
   }
   
   button.delete-task-btn {
-    background-color: #faedcd;
+    margin: 5px;
+    border: none;
+    background-color: #fefae0;
     font-weight: bold;
     color: rgb(143, 14, 14);
     float: right;
     border-radius: 5px;
   }
 
-  button.delete-task-btn:hover {
-    color:#faedcd;
-    background-color: rgb(143, 14, 14);
+  .quote-text{
+    color: #283618;
+    font-weight: bold;
   }
- 
- 
+  
+  .quote-card {
+    font-size: 20px;
+    color: white;
+    border: 1px, black;
+    background-color: #faedcd;
+    /* background-image: url('https://i.pinimg.com/564x/73/93/91/73939130e8f6bdc984881bfb8e34c22c.jpg'); */
+    text-shadow: white ;
+    width: 93%;
+    height: 20%;
+    border-radius: 20px;
+    padding: 45px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  
+  .reminder-card {
+    color: #283618;
+    background-color: #7f9172;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .task-card {
+    color: #283618;
+    background-color: #b7b7a4;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .exercise-card {
+    /* font-size: 20px; */
+    color: #283618;
+    background-color: #9b944e;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .event-card {
+    color: #283618;
+    background-color: #a5a58d;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .daily-agenda{
+    display: inline-block;
+    width: 70%;
+    background-color: #515a47;
+    border-radius: 20px;
+    padding:40px;
+    margin-bottom: 70px;
+    background-image: url('https://images.wallpaperscraft.com/image/single/leaf_green_dark_plant_120039_2560x1080.jpg');
+  }
+
+  .agenda-header {
+    color:#e9edc9;
+    text-shadow: 3px 3px #192010;
+    background-color:#3d473d;
+     /* #132a13; */
+    border-radius: 15px;
+    font-size: 35px;
+    /* padding: 5px; */
+    display: inline-block;
+    letter-spacing: 5px;
+    padding-top: 10px;
+  }
+
+  .button-counter {
+    font-weight: bold;
+    font-size: 50px;
+    border: none;
+    text-align: center;
+    color: #283618;
+    background-color: #fefae0;
+  }
+  
+  .button-counter:hover {
+    text-shadow: #5b6b49 1px 0 10px; 
+    font-size: 45px;
+  }
+
+  .date-item {
+    font-size: 35px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #e9edc9;
+    border-radius: 100px;
+    text-shadow: 1px 2px #868d7d;
+  }
+
+  h3 {
+    color: #283618;
+    font-size: 30px;
+  }
+
+  .quotes-page {
+    color: #e9edc9;
+    display: inline-block;
+    width: 70%;
+    background-color: #515a47;
+    border-radius: 20px;
+    padding:40px;
+    margin-bottom: 70px;
+    background-image: url('https://i.pinimg.com/originals/79/cb/83/79cb83bfb3b7d914bca25bcb69e0a9c3.jpg');
+  }
+
+  .quote-lister {
+    color: #e9edc9;
+    font-size: 20px;
+    background-color: rgb(81, 90, 71, 0.8);
+    text-shadow: 1px 2px #252723;
+    font-style: italic;
+    border-radius: 20px;
+    padding:8px;
+    text-align: center;
+    display: block;
+  }
+  
+  .quotes-header {
+    font-weight: bold;
+    font-size: 35px;
+    background-color: #e9edc9;
+    color: #2f3b25;
+    border-radius: 16px;
+    padding:10px;
+    width: 70%;
+    align-content: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #8d9684;
+  }
+
+  .task-list{
+    /* color: #e9edc9; */
+    display: inline-block;
+    width: 70%;
+    background-color: #515a47;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 70px;
+    background-image: url('https://images.unsplash.com/photo-1620820186187-fc32e79adb74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29mZmVlJTIwYmVhbnxlbnwwfHwwfHw%3D&w=1000&q=80');
+    display: inline-block;
+    /* padding-left: 100px; */
+  }
+
+  .task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .task-listers {
+    width: 100%;
+    align-content: center;
+  }
+  
+  .table-date{
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+  }
+
+  .delete-again-button-for-task {
+    background-color: rgb(81, 90, 71, 0.0);
+    float: right;
+    width: 1%;
+  }
+
+  .task-header {
+    font-weight: bold;
+    font-size: 35px;
+    background-color: #fefae0;
+    color: #582f0e;
+    border-radius: 16px;
+    padding:10px;
+    width: 70%;
+    align-content: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #a68a64;
+  }
+
+  form {
+    /* border: 1px solid red; */
+    /* display: inline; */
+    font-family: 'Didact Gothic', sans-serif;
+    
+  }
+  
+  input {
+    border: 1px solid #faf3dd;
+    background-color: #faf3dd ;
+    border-radius: 6px;
+
+  }
+
+  .form-input {
+    background-color: #faf3dd ;
+    border-radius: 6px;
+    border: 1px solid #faf3dd;
+  }
+
+  .reminder-list {
+    display: inline-block;
+    width: 70%;
+    background-color: #515a47;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 70px;
+    background-image: url('https://img.wallpapersafari.com/phone/640/1136/90/72/RHwoqL.png');
+    
+  }
+
+  .reminder-container{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .event-container{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .exercises-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    width: 500px;
+    height: 450px;
+    background-color: #515a47;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 70px;
+    background-image: url('https://coconuts.co/wp-content/uploads/2018/01/ground-zero.jpg')
+  }
+
+  .exercise-header {
+    font-weight: bold;
+    font-size: 35px;
+    background-color: #fefae0;
+    color: #1c157e;
+    border-radius: 16px;
+    padding:10px;
+    width: 80%;
+    align-content: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #5dd5eb;
+    padding-bottom: 15px;
+  }
+
+  .exercise-item {
+    font-size: 30px;
+    background-color: #5dd5eb;
+    border-radius: 16px;
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+    margin-top: 40px;
+    color: #1c157e;
+    text-shadow: white 1px 0 5px;
+  }
+
+  .exercise-item:hover {
+    background-color: #1c157e;
+    color: #5dd5eb;
+  }
+
+  .event-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    width: 70%;
+    background-color: #515a47;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 70px;
+  }
+
+  .exercise-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

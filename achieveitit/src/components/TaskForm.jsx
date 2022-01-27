@@ -34,7 +34,7 @@ export default function TaskForm({addNewTask}) {
             type="text" value={newTask} 
             onChange={handleChange}>
         </input>
-          <button type="submit">Add to List</button> 
+          <button className="form-input" type="submit">Add to List</button> 
       </form>
   </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import EventForm from './EventForm';
 import EventItem from './EventItem';
 
-export default function EventList({events, addNewEvent}) {
+export default function EventList({events, addNewEvent, days}) {
   const eventList = events.map((event) => 
   <EventItem 
     key={event.id}
@@ -10,11 +10,13 @@ export default function EventList({events, addNewEvent}) {
   />)
 
   return (
-  <div>
+  <div className="event-list">
       <h2>Events:</h2>
       {eventList}
       <br/> 
-      <EventForm addNewEvent={addNewEvent}/>
+      <EventForm 
+      days={days}
+      addNewEvent={addNewEvent}/>
   </div>
   )
 }

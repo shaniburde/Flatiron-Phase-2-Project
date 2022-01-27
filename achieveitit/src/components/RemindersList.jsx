@@ -10,8 +10,8 @@ export default function ReminderList({ reminders, addNewReminder }) {
     />
     )
   return (
-    <div>
-      <h2>Reminders</h2>
+    <div className="reminder-list">
+      <h2 className="task-header">Reminders</h2>
       {reminderList}
       <br/>
       <ReminderForm addNewReminder={addNewReminder}/>

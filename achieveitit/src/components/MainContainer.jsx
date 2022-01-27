@@ -8,7 +8,7 @@ import Exercises from "./Exercises";
 import { Route, Switch } from 'react-router-dom';
 
 
-function MainContainer({ count }) {
+function MainContainer({ count, days }) {
   const [tasks, setTasks] = useState([])
   const [quotes, setQuotes] = useState([])
   const [reminders, setReminders] = useState([])
@@ -88,7 +88,9 @@ function MainContainer({ count }) {
         <Route path='/events'>
           <EventList 
           addNewEvent={addNewEvent}
-          events={events}/> 
+          events={events}
+          days={days}
+          /> 
         </Route>
 
         <Route path="/todolist">

@@ -1,12 +1,14 @@
 import React from 'react';
 
 export default function Exercises({exercises}) {
-  const exercisesList = exercises.map((exercise) => <li key={exercise.id}>{exercise.exercise}</li>)
+  const exercisesList = exercises.map((exercise) => <p key={exercise.id}>{exercise.exercise}</p>)
 
   return (
-  <div>
-      <h2>Exercises</h2>
-      {exercisesList}
+  <div className="exercises-list">
+      <h2 className="exercise-header">Exercise of the Day:</h2>
+    <div className="exercise-container">
+      <p className="exercise-item">{exercisesList}</p>
+    </div>
   </div>
   )
 }

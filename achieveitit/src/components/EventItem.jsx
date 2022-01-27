@@ -12,7 +12,7 @@ export default function EventItem({eventObj}) {
     // `;
 
   return (
-  <>
+  <div className="event-container">
     <table>
         <tbody>
             <tr className="event"> {event}</tr>
@@ -24,6 +24,6 @@ export default function EventItem({eventObj}) {
         </tbody>
     </table>
     <br/>
-  </>
+  </div>
   );
 }

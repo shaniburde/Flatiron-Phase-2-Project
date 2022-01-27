@@ -13,11 +13,13 @@ export default function TaskItem({taskObj, handleDeleteTask }) {
       }
 
   return (
-  <div>
-       <table>
+  <div className='task-container'>
+       <table align="center">
         <tr className="table-data">
-            <td key={id}>{task} 
-            <button onClick={handleDelete} className="delete-task-btn">X</button></td>
+            <td className="task-listers"  key={id}>{task} </td>
+           <td className="delete-again-button-for-task">
+            <button onClick={handleDelete} className="delete-task-btn">X</button>
+          </td>
         </tr>
     </table>
   </div>

@@ -29,7 +29,7 @@ export default function ReminderForm({ addNewReminder }) {
     }
 
   return  (
-    <div>
+    <div >
       <form onSubmit={handleSubmit} >
       <input 
         value={newReminder} 
@@ -46,7 +46,7 @@ export default function ReminderForm({ addNewReminder }) {
         type="Date" 
         name="date"
       />
-      <button type="submit">Remind me</button> 
+      <button className="form-input" type="submit">Remind me</button> 
       </form>
   </div>);
 }

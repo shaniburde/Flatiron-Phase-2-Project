@@ -6,8 +6,8 @@ export default function ReminderItem({ reminderObj }) {
     const dateItem = new Date(date).toLocaleDateString('en-US', options);
 
   return (
-  <div>
-      <table>
+  <div className="reminder-container">
+      <table align="center">
         <tr>
             <td>{reminder}</td>
             <td>{dateItem}</td>

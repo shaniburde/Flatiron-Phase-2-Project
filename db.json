@@ -174,19 +174,19 @@
       "id": 2,
       "event": "London Fashion Week Starts Today",
       "date": "2022-01-24",
-      "dateId": 2
+      "dateId": 1
     },
     {
       "event": "Lady Gaga concert",
       "date": "2022-01-28",
       "id": 3,
-      "dateId": 3
+      "dateId": 5
     },
     {
-      "event": "Concert",
+      "event": "Concert at Barclay's",
       "date": "2022-01-25",
       "id": 4,
-      "dateId": 4
+      "dateId": 2
     },
     {
       "event": "Nets Game at Barclay's Center",
@@ -195,16 +195,94 @@
       "dateId": 8
     },
     {
-      "event": "Concert",
+      "event": "Concert at House of Blues",
       "date": "2022-01-27",
       "dateId": 3,
       "id": 6
     },
     {
-      "event": "Flight to LA",
-      "date": "2022-01-24",
-      "dateId": 1,
+      "event": "testing",
+      "date": "2022-01-27",
+      "dateId": 4,
       "id": 7
+    },
+    {
+      "event": "new",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 8
+    },
+    {
+      "event": "Ice Cream",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 9
+    },
+    {
+      "event": "hello world",
+      "date": "2022-01-26",
+      "dateId": 3,
+      "id": 10
+    },
+    {
+      "event": "newdata",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 11
+    },
+    {
+      "event": "event",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 12
+    },
+    {
+      "event": "concert",
+      "date": "2022-01-29",
+      "dateId": 6,
+      "id": 13
+    },
+    {
+      "event": "hi",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 14
+    },
+    {
+      "event": "hehe",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 15
+    },
+    {
+      "event": "jwjjncv",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 16
+    },
+    {
+      "event": "jubilee",
+      "date": "2022-01-29",
+      "dateId": 6,
+      "id": 17
+    },
+    {
+      "event": "hiushci",
+      "date": "2022-01-30",
+      "dateId": 7,
+      "id": 18
+    },
+    {
+      "event": "umbrella",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 19
+    },
+    {
+      "event": "Ice Cream",
+      "date": "2022-01-26",
+      "dateId": 3,
+      "id": 20
     }
   ],
   "exercises": [
@@ -261,24 +339,35 @@
       "completed": true
     },
     {
-      "task": "Get delete button to work",
-      "id": 4
-    },
-    {
       "task": "Create Phase 2 Project",
       "id": 5
     },
     {
-      "task": "Clean up my room",
+      "task": "Clean up the pool",
       "id": 6
     },
     {
-      "reminder": "Clean my room",
-      "date": "2022-01-24",
+      "task": "Clean up my room",
       "id": 7
+    },
+    {
+      "task": "Wash dishes",
+      "id": 8
+    },
+    {
+      "task": "Call grandma",
+      "id": 9
+    },
+    {
+      "task": "Buy coffee",
+      "id": 10
     }
   ],
   "dates": [
+    {
+      "id": 0,
+      "date": "2022-01-23"
+    },
     {
       "id": 1,
       "date": "2022-01-24"
@@ -329,7 +418,7 @@
     },
     {
       "id": 13,
-      "date": "2022-01-05"
+      "date": "2022-02-05"
     },
     {
       "id": 14,
