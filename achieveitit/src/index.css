@@ -18,7 +18,7 @@
     padding: 0;
     font-family: sans-serif;
     /* background-image: linear-gradient(#fefae0, #5b6b49) ; */
-    background-color: #fefae0;
+    background-color: #fff8e8;
   }
 
   header {
@@ -54,27 +54,29 @@
  
   .event {
     float: left;
-    padding: 10px;
-    margin: 5px;
-    width: 300px;
+    text-align: center;
+    padding: 5px;
+    margin: 4px;
+    width: 450px;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
     background-color: #e9edc9;
+
   }
   
   .date {
     float: right;
-    padding: 10px;
+    padding: 8px;
     margin: 5px;
-    width: auto;
+    width: 150px;
     /* height: 40%; */
     border-radius: 5px;
-    text-align: left;
+    text-align: right;
     background-color: #e9edc9;
   }
   
   
-  table {
+  .task-table {
     font-size: 17px;
     width: 50%;
     height: 10%;
@@ -190,6 +192,7 @@
     padding:40px;
     margin-bottom: 70px;
     background-image: url('https://images.wallpaperscraft.com/image/single/leaf_green_dark_plant_120039_2560x1080.jpg');
+    background-size: cover;
   }
 
   .agenda-header {
@@ -243,6 +246,7 @@
     padding:40px;
     margin-bottom: 70px;
     background-image: url('https://i.pinimg.com/originals/79/cb/83/79cb83bfb3b7d914bca25bcb69e0a9c3.jpg');
+    background-size: cover;
   }
 
   .quote-lister {
@@ -281,6 +285,7 @@
     margin-bottom: 70px;
     background-image: url('https://images.unsplash.com/photo-1620820186187-fc32e79adb74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29mZmVlJTIwYmVhbnxlbnwwfHwwfHw%3D&w=1000&q=80');
     display: inline-block;
+    background-size: 485px 730px;
     /* padding-left: 100px; */
   }
 
@@ -331,7 +336,7 @@
   input {
     border: 1px solid #faf3dd;
     background-color: #faf3dd ;
-    border-radius: 6px;
+    border-radius: 10px;
 
   }
 
@@ -340,27 +345,7 @@
     border-radius: 6px;
     border: 1px solid #faf3dd;
   }
-
-  .reminder-list {
-    display: inline-block;
-    width: 70%;
-    background-color: #515a47;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 70px;
-    background-image: url('https://img.wallpapersafari.com/phone/640/1136/90/72/RHwoqL.png');
-    
-  }
-
-  .reminder-container{
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  
-  .exercises-list{
+ .exercises-list{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,6 +379,7 @@
     align-items: center;
     justify-content: center;
   }
+  
   .exercise-item {
     font-size: 30px;
     background-color: #5dd5eb;
@@ -419,9 +405,13 @@
     display: inline-block;
     width: 70%;
     background-color: #515a47;
+    background-image: url("https://geographical.co.uk/media/k2/items/cache/e533c4b8d2d2d3798f3271c35ca6e050_XL.jpg");
+    background-size: 1200px 825px;
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 70px;
+    /* margin: 20px; */
+    
   }
   
   .event-container{
@@ -431,3 +421,126 @@
     justify-content: center;
     /* width: 70%; */
   }
+  
+  .event-item {
+    width: 80%;
+    height: 20%;
+  }
+  
+  .event-table {
+    font-size: 17px;
+    /* width: 70%; */
+    height: 20%;
+    text-align: center;
+    margin: 5px;
+    color: #3a3726;
+    border-radius: 10px;
+    background-color: #e9edc9;
+    text-shadow: 1px 1px rgb(223, 200, 184);
+    padding: 20px;
+    padding-left: 100px;
+  }
+  
+  .event-header {
+    font-weight: bold;
+    font-size: 35px;
+    background-color: #747e3b;
+    color: #f3f8d1;
+    border-radius: 16px;
+    padding:10px;
+    width: 60%;
+    align-content: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #575130;
+    padding-bottom: 15px;
+  }
+  
+  .reminder-item-list{
+    font-size: 17px;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    margin: 10px; 
+    color: rgb(255, 247, 203);
+    border-radius: 40px;
+    background-color: #feffc68c;
+    text-shadow: 1px 1px hsl(57, 30%, 26%);
+    padding: 10px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+    .reminder-right{
+      float: right;
+      padding: 8px;
+      margin: 1px;
+      width: 200px;;
+      border-radius: 5px;
+      text-align: right;
+      /* background-color: #e9edc9; */
+    }
+    
+    .reminder-left{
+      float: left;
+      padding: 8px;
+      margin: 1px;
+      width: 450px;;
+      border-radius: 5px;
+      text-align: left;
+      
+    }
+    
+    .header-reminder{
+      text-align: center;
+    }
+    
+    .due-dates{
+      width: 500px;
+      text-align: center;
+      margin-left: 180px;
+      font-size: 25px;
+      
+    }
+    .reminder-list {
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 70px;
+      display: inline-block;
+      width: 70%;
+      background-color: #515a47;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 70px;
+      background-image: url("https://images.unsplash.com/photo-1620280929427-55fe6257cbff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBhZXN0aGV0aWN8ZW58MHx8MHx8&w=1000&q=80");
+      background-size: cover;
+      
+    }
+  
+    .reminder-container{
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      background-color: #7b8b33;
+      margin: 3px;
+      border-radius: 20px;
+    }
+
+    .reminder-header{
+      font-weight: bold;
+    font-size: 35px;
+    background-color: #e9edc9;
+    color: #8c9e4d;
+    border-radius: 16px;
+    padding:10px;
+    width: 70%;
+    align-content: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #373a2c;
+
+    }

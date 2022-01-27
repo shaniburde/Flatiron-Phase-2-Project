@@ -14,25 +14,16 @@ function App() {
   }, [count])
 
   const dateArray = days.map((date) => date.date);
-  // console.log(dateArray)
-
-  // console.log(currentDay)
-  // const daysObj = currentDay[count]
-  // daysObj.getFullYear()
   
-  // const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  // let dateItem = new Date(dateArray[count]).toLocaleDateString('en-US', options);
-
-  // let dateItem = new Date(Date.UTC(dateArray[count].getFullYear(), dateArray[count].getMonth(), dateArray[count].getDate()));
-  // console.log(dateArray)
-  // console.log(dateItem)
+  let dateSplit = dateArray[count]?.split('-');
+  
 
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  let dateItem = new Date(dateArray[count+1]).toLocaleDateString('en-US', options);
+  // let dateItem = new Date(Date.UTC(dateArray[count].getFullYear(), dateArray[count].getMonth(), dateArray[count].getDate()));
+  let dateItem = new Date(dateSplit).toLocaleDateString('en-US', options);
 
-  // console.log(new Date(dateArray[0]))
-  // let dateDisplay = dateItem
-  // console.log(dateItem)
+
+  
 const backArrow =`<`;
 const forwardArrow = `>`;
 
@@ -47,7 +38,7 @@ const forwardArrow = `>`;
         </div>
        <button className="button-counter" onClick={() => setCount((count) => count + 1)}> {forwardArrow} </button> </h3>
       <br/>
-      <MainContainer count={count} days={days} />
+      <MainContainer setCount={setCount} count={count} days={days} />
       
     </div>
   );

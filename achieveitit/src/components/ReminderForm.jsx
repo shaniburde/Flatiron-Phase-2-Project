@@ -30,6 +30,7 @@ export default function ReminderForm({ addNewReminder }) {
 
   return  (
     <div >
+      <br/>
       <form onSubmit={handleSubmit} >
       <input 
         value={newReminder} 

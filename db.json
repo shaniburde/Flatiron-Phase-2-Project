@@ -167,14 +167,14 @@
     {
       "id": 1,
       "event": "John Doe's Wedding",
-      "date": "2022-01-24",
-      "dateId": 1
+      "date": "2022-01-23",
+      "dateId": 0
     },
     {
       "id": 2,
       "event": "London Fashion Week Starts Today",
-      "date": "2022-01-24",
-      "dateId": 1
+      "date": "2022-01-23",
+      "dateId": 0
     },
     {
       "event": "Lady Gaga concert",
@@ -203,7 +203,7 @@
     {
       "event": "testing",
       "date": "2022-01-27",
-      "dateId": 4,
+      "dateId": 0,
       "id": 7
     },
     {
@@ -283,6 +283,176 @@
       "date": "2022-01-26",
       "dateId": 3,
       "id": 20
+    },
+    {
+      "event": "Ice Cream",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 21
+    },
+    {
+      "event": "finally fixed it",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 22
+    },
+    {
+      "event": "checking",
+      "date": "2022-01-24",
+      "dateId": 1,
+      "id": 23
+    },
+    {
+      "event": "something",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 24
+    },
+    {
+      "event": "hi",
+      "date": "2022-01-25",
+      "dateId": 2,
+      "id": 25
+    },
+    {
+      "event": "Ice Cream",
+      "date": "2022-01-25",
+      "dateId": 2,
+      "id": 26
+    },
+    {
+      "event": "hi",
+      "date": "2022-01-25",
+      "dateId": 2,
+      "id": 27
+    },
+    {
+      "event": "Shani",
+      "date": "2022-01-24",
+      "dateId": 1,
+      "id": 28
+    },
+    {
+      "event": "",
+      "date": "2022-01-24",
+      "dateId": 1,
+      "id": 29
+    },
+    {
+      "event": "Shani",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 30
+    },
+    {
+      "event": "Shani' Ramen",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 31
+    },
+    {
+      "event": "Shani",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 32
+    },
+    {
+      "event": "Shani's Ramen",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 33
+    },
+    {
+      "event": "go to the salon",
+      "date": "2022-02-03",
+      "dateId": 11,
+      "id": 34
+    },
+    {
+      "event": "coffee",
+      "date": "2022-01-28",
+      "dateId": 5,
+      "id": 35
+    },
+    {
+      "event": "matcha",
+      "date": "2022-02-01",
+      "dateId": 9,
+      "id": 36
+    },
+    {
+      "event": "Ilolo",
+      "date": "2022-01-29",
+      "dateId": 6,
+      "id": 37
+    },
+    {
+      "event": "charge phone",
+      "date": "2022-01-23",
+      "id": 38
+    },
+    {
+      "event": "Shani",
+      "date": "2022-01-27",
+      "dateId": 4,
+      "id": 39
+    },
+    {
+      "event": "Shani",
+      "date": "2022-01-23",
+      "id": 40
+    },
+    {
+      "event": "coffee",
+      "date": "2022-01-23",
+      "id": 41
+    },
+    {
+      "event": "coffee",
+      "date": "2022-01-23",
+      "id": 42
+    },
+    {
+      "event": "charge phone",
+      "date": "2022-01-23",
+      "id": 43
+    },
+    {
+      "event": "charge phone",
+      "date": "2022-01-23",
+      "id": 44
+    },
+    {
+      "event": "charge phone",
+      "date": "2022-01-23",
+      "id": 45
+    },
+    {
+      "event": "Princess Cutie",
+      "date": "2022-01-23",
+      "id": 46
+    },
+    {
+      "event": "charge phone",
+      "date": "2022-01-23",
+      "id": 47
+    },
+    {
+      "event": "Princess Cutie",
+      "date": "2022-01-24",
+      "dateId": 1,
+      "id": 48
+    },
+    {
+      "event": "Shani",
+      "date": "2022-01-24",
+      "dateId": 1,
+      "id": 49
+    },
+    {
+      "event": "Shani",
+      "date": "2022-01-23",
+      "id": 50
     }
   ],
   "exercises": [

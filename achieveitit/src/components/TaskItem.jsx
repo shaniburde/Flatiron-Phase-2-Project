@@ -14,7 +14,7 @@ export default function TaskItem({taskObj, handleDeleteTask }) {
 
   return (
   <div className='task-container'>
-       <table align="center">
+       <table className="task-table" align="center">
         <tr className="table-data">
             <td className="task-listers"  key={id}>{task} </td>
            <td className="delete-again-button-for-task">
