@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import MainContainer from './MainContainer';
 import Header from './Header';
+import DateDisplay from './DateDisplay';
+import { Route, Switch } from 'react-router-dom';
+
 
 
 function App() {
   const [days, setDays] = useState([])
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(5);
 
   useEffect(() => {
     fetch(`http://localhost:8000/dates`)
@@ -17,6 +20,12 @@ function App() {
   
   let dateSplit = dateArray[count]?.split('-');
   
+  // const dayDay = new Date ();
+  // const splittedNewDay = dayDay.split("-")
+
+  // if splittedNewDay === dateSplit 
+  // return splittedNewDay
+  // else null 
 
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   // let dateItem = new Date(Date.UTC(dateArray[count].getFullYear(), dateArray[count].getMonth(), dateArray[count].getDate()));
@@ -24,22 +33,23 @@ function App() {
 
 
   
-const backArrow =`<`;
-const forwardArrow = `>`;
-
+  const backArrow =`<`;
+  const forwardArrow = `>`;
+  
   return (
 
     <div className="App">
       <Header/>
       <br/>
-      <h3><button className="button-counter" onClick={() => setCount(count - 1)}> {backArrow}</button> 
-        <div className="date-item">
-        {dateItem}
-        </div>
-       <button className="button-counter" onClick={() => setCount((count) => count + 1)}> {forwardArrow} </button> </h3>
-      <br/>
-      <MainContainer setCount={setCount} count={count} days={days} />
+      <MainContainer setCount={setCount} 
+      count={count} 
+      days={days} 
+      dateItem={dateItem} 
+      forwardArrow={forwardArrow} 
+      backArrow={backArrow}
+      />
       
+
     </div>
   );
 }

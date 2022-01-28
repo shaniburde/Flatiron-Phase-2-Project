@@ -50,7 +50,7 @@ const newDateId = days.filter(({date, id}) => {
         onChange={handleChange} 
         type="text" 
         name="name" 
-        placeholder="Event form"
+        placeholder="New event..."
       />
       <br/> 
       <br/>
@@ -60,7 +60,7 @@ const newDateId = days.filter(({date, id}) => {
         type="Date" 
         name="date"
       />
-      <button className="form-input" type="submit">Add To Calendar</button> 
+      <button className="form-input" type="submit">Create Event</button> 
       </form>
   </div>);
 }

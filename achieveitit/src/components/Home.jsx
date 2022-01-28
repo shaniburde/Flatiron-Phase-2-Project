@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
+import DateDisplay from './DateDisplay';
 
 
-function Home({ reminders, quotes, events, exercises, tasks, count}) {
+function Home({ reminders, quotes, events, exercises, tasks, count, dateItem, setCount, forwardArrow, backArrow}) {
   const [dailyQuote, setDailyQuote] = useState([])
   
   console.log(count)
@@ -22,14 +23,29 @@ function Home({ reminders, quotes, events, exercises, tasks, count}) {
   }
   )
   const dailyAgenda = ` D A I L Y  A G E N D A `;
+
+  const currentDate = new Date()
+  
+  // function getTodaysDate(date){
+  //   if(currentDate === )
+  // }
+  console.log(dateItem)
   
   return (
+    <>
+    <DateDisplay  
+      setCount={setCount} 
+      count={count}
+      dateItem={dateItem} 
+      forwardArrow={forwardArrow} 
+      backArrow={backArrow}
+      />
     <div className="daily-agenda">
       <h1 className="agenda-header"><pre>{dailyAgenda}</pre></h1> 
        <br/>
       <div className="quote-card">
-      <h4 className="quote-text">Quote of the Day:</h4> 
-        <p className="quote-text">{dailyDisplay}</p>
+      <h4 className="quote-text">Quote of the Day</h4> 
+        <p className="daily-quote">" {dailyDisplay} "</p>
       </div>
       <br/>
       <div className="reminder-card">
@@ -46,10 +62,11 @@ function Home({ reminders, quotes, events, exercises, tasks, count}) {
         
       </div>
       <div className="exercise-card">
-      <h4>Exercise:</h4>
+      <h4>Today's Workout</h4>
         <p>{dailyExercise?.exercise} </p> 
       </div>
     </div>
+    </>
   )
 
 }

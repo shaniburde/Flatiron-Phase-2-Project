@@ -6,30 +6,45 @@
     font-family: 'Didact Gothic', sans-serif;
   }
   
+  form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 
   input {
-    width: 25% !important;
+    width: 35% !important;
     margin-right: 0.25em!important;
     margin-left: 0.25em!important;
+
   }
   
   body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    /* background-image: linear-gradient(#fefae0, #5b6b49) ; */
     background-color: #fff8e8;
   }
 
   header {
+    padding-top: 20px;
     font-size: 1.6em;
-    text-shadow: #5b6b49 1px 0 5px;
-    margin-top:1px;
+    background-color: #92a381;
+    padding-bottom: 15px;
   }
 
   h1 {
-    font-size: 2em;
     padding-top: 20px;
+    color:#1e2714;
+    font-weight: bold;
+    font-size: 80px;
+    padding: 5px;
+    text-shadow: 3px 3px #f8ffef;
+    padding-bottom: 20px;
+  }
+
+  .center:hover {
+    font-size: 80px;
   }
 
   a.button {
@@ -38,29 +53,37 @@
     margin: 10px;
     display: inline-block;
     padding: 10px;
-    background: #273518;
-    color: #fefae0;
+    background: #39442e;
+    width: 130px;
+    color: #fffdef;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 15px;
+    box-shadow: 0 5px #b5cb98;
+    transition: .7s;
   }
   
   a.button:hover {
-    color: #fefae0;
-    background-color: #606c38;
+    transition-duration: 5ms;
+    color: #39442e;
+    background-color: #fffdef;
     transform: scale(0.98);
-    box-shadow: 3px 2px 22px .5px #333d29;
-  
+    transition: .7s;
+ 
   }
  
   .event {
-    float: left;
+    font-size: 25px;
+    display: inline-block;
     text-align: center;
-    padding: 5px;
-    margin: 4px;
-    width: 450px;
+    padding: 25px;
+    margin: 20px;
+    margin-bottom: 15px;
+    width: 60%;
+    height: 30%;
     border-radius: 5px;
-    text-align: center;
-    background-color: #e9edc9;
+    background-color: #fffeda;
+    color:rgb(23, 31, 22);
+    text-shadow:  5px 3px #d2ff5693
 
   }
   
@@ -77,15 +100,15 @@
   
   
   .task-table {
-    font-size: 17px;
+    font-size: 19px;
     width: 50%;
     height: 10%;
     text-align: center;
     margin: 5px;
-    color: #fefae0;
+    color: #fffdef;
     border-radius: 10px;
-    background-color: rgb(127, 85, 57, 0.8);
-    text-shadow: 1px 2px rgb(59, 38, 24);
+    background-color: rgba(85, 60, 44, 0.925);
+    text-shadow: 3px 1.5px rgb(32, 23, 17);
     padding: 20px;
   }
   
@@ -102,20 +125,23 @@
     color: rgb(143, 14, 14);
     float: right;
     border-radius: 5px;
+    transition: .5s;
   }
 
   .quote-text{
-    color: #283618;
+    color: #909174;
+    text-shadow: 1px 1px rgb(43, 46, 41);
     font-weight: bold;
+    letter-spacing: 4px;
+    padding-bottom: 5px;
   }
   
   .quote-card {
     font-size: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     border: 1px, black;
     background-color: #faedcd;
-    /* background-image: url('https://i.pinimg.com/564x/73/93/91/73939130e8f6bdc984881bfb8e34c22c.jpg'); */
-    text-shadow: rgb(255, 255, 255) ;
+    text-shadow: 1px 2px #b6beae;
     width: 93%;
     height: 20%;
     border-radius: 20px;
@@ -126,7 +152,7 @@
 
   
   .reminder-card {
-    color: #e9ffd0;
+    color: #f6ffeb;
     background-color: #7f9172;
     text-shadow: 1px 2px #2e3526;
     border-radius: 20px;
@@ -139,9 +165,9 @@
   }
   
   .task-card {
-    color: #f1ffe2;
+    color: #fbfff6;
     background-color: #b7b7a4;
-    text-shadow: 1px 2px #414937;
+    text-shadow: 1px 2px #373d2f;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
@@ -153,7 +179,7 @@
   
   .exercise-card {
     /* font-size: 20px; */
-    color: #f1fde4;
+    color: #f7ffee;
     background-color: #9b944e;
     text-shadow: 1px 2px #414937;
     width: fit-content;
@@ -172,9 +198,9 @@
   }
   
   .event-card {
-    color: #efffdb;
+    color: #fbfff7;
     background-color: #a5a58d;
-    text-shadow: 1px 2px #414937;
+    text-shadow: 1px 2px #22251e;
     border-radius: 20px;
     width: fit-content;
     height: fit-content;
@@ -199,37 +225,42 @@
     color:#e9edc9;
     text-shadow: 3px 3px #192010;
     background-color:#3d473d;
-     /* #132a13; */
-    border-radius: 15px;
-    font-size: 35px;
-    /* padding: 5px; */
+    border-radius: 25px;
+    font-size: 45px;
     display: inline-block;
     letter-spacing: 5px;
-    padding-top: 10px;
+    padding-top: 25px;
+    width:100%;
   }
 
   .button-counter {
     font-weight: bold;
     font-size: 50px;
     border: none;
+    margin: 5px;
     text-align: center;
     color: #283618;
-    background-color: #fefae0;
+    background-color: rgb(254, 250, 224, 0.0);
+    border-radius: 10px;
+    text-shadow: 1px 3px #fff8e8;
+    transition: .5s;
   }
   
   .button-counter:hover {
-    text-shadow: #5b6b49 1px 0 10px; 
+    text-shadow: #5b6b49 10px 0 10px; 
     font-size: 45px;
   }
 
   .date-item {
+    margin: 10px;
     font-size: 35px;
     display: inline-block;
     font-weight: bold;
-    padding: 15px;
+    padding: 20px;
     background-color: #e9edc9;
     border-radius: 100px;
     text-shadow: 1px 2px #868d7d;
+    box-shadow: 0 5px #283618;
   }
 
   h3 {
@@ -310,12 +341,13 @@
     background-color: rgb(81, 90, 71, 0.0);
     float: right;
     width: 1%;
+    transition: .5s;
   }
 
   .task-header {
     font-weight: bold;
     font-size: 35px;
-    background-color: #fefae0;
+    background-color: #fefae0c4;
     color: #582f0e;
     border-radius: 16px;
     padding:10px;
@@ -323,7 +355,7 @@
     align-content: center;
     display: inline-block;
     margin-bottom: 20px;
-    text-shadow: 1px 2px #a68a64;
+    text-shadow: 1px 2px #ad9a7e;
   }
 
   form {
@@ -337,108 +369,91 @@
     border: 1px solid #faf3dd;
     background-color: #faf3dd ;
     border-radius: 10px;
+    outline: #192010;
 
   }
 
   .form-input {
     background-color: #faf3dd ;
-    border-radius: 6px;
+    border-radius: 10px;
     border: 1px solid #faf3dd;
   }
+
  .exercises-list{
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     display: inline-block;
-    width: 500px;
-    height: 450px;
-    background-color: #515a47;
+    width: 70%;
+    height: 100%;
+    background-color: #B13D35;
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 70px;
-    background-image: url('https://coconuts.co/wp-content/uploads/2018/01/ground-zero.jpg')
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/home-gym-ideas-hbx050121inspoopener-004-1617991498.jpg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
   }
   
   .exercise-header {
     font-weight: bold;
     font-size: 35px;
-    background-color: #fefae0;
-    color: #1c157e;
+    background-color: rgb(177, 161, 145);
+    color: #3a301d;
     border-radius: 16px;
-    padding:10px;
-    width: 80%;
+    padding: 20px;
+    width: fit-content;
     align-content: center;
     display: inline-block;
     margin-bottom: 20px;
-    text-shadow: 1px 2px #5dd5eb;
-    padding-bottom: 15px;
+    text-shadow: 1px 2px rgb(255, 243, 236);
   }
   
   .exercise-container{
-    display: flex;
+    display: inline-block;
     align-items: center;
+    text-align: center;
     justify-content: center;
+    width: 85%;
+    height: 70%;
+    margin-top: 50px;
   }
   
   .exercise-item {
     font-size: 30px;
-    background-color: #5dd5eb;
-    border-radius: 16px;
-    height: fit-content;
-    width: fit-content;
-    padding: 30px;
-    margin-top: 40px;
-    color: #1c157e;
-    text-shadow: white 1px 0 5px;
-    
+    font-weight: bold;
+    background-color: rgba(95, 78, 61, 0.938);
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    padding: 10%;
+    align-items: center;
+    color: #eee5de;
+    text-align: center;
+    text-shadow: 2px 2px #2e271a;
+    position: relative;
+    display: inline-block;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px;
   }
   
-  .exercise-item:hover {
-    background-color: #1c157e;
-    color: #5dd5eb;
-  }
   
   .event-list {
     display: flex;
     align-items: center;
     justify-content: center;
     display: inline-block;
-    width: 70%;
+    width: 75%;
     background-color: #515a47;
-    background-image: url("https://geographical.co.uk/media/k2/items/cache/e533c4b8d2d2d3798f3271c35ca6e050_XL.jpg");
-    background-size: 1200px 825px;
+    background-image: url(https://wallpaperaccess.com/full/682452.jpg);
+    background-size: cover;
+    /* filter: blur(8px);
+   -webkit-filter: blur(8px); */
     border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 70px;
+    padding: 70px;
+    margin-bottom: 30px;
     /* margin: 20px; */
-    
-  }
-  
-  .event-container{
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 70%; */
-  }
-  
-  .event-item {
-    width: 80%;
-    height: 20%;
-  }
-  
-  .event-table {
-    font-size: 17px;
-    /* width: 70%; */
-    height: 20%;
-    text-align: center;
-    margin: 5px;
-    color: #3a3726;
-    border-radius: 10px;
-    background-color: #e9edc9;
-    text-shadow: 1px 1px rgb(223, 200, 184);
-    padding: 20px;
-    padding-left: 100px;
   }
   
   .event-header {
@@ -459,52 +474,43 @@
   .reminder-item-list{
     font-size: 17px;
     width: 80%;
-    height: 20%;
-    text-align: center;
-    margin: 10px; 
+    height: 100%;
+    padding: 80px;
     color: rgb(255, 247, 203);
     border-radius: 40px;
     background-color: #feffc68c;
-    text-shadow: 1px 1px hsl(57, 30%, 26%);
-    padding: 10px;
+    text-shadow: 1px 2px hsl(55, 16%, 13%);
+    padding: 30px;
     display: inline-block;
     align-items: center;
     justify-content: center;
-    
-    
+
   }
 
     .reminder-right{
       float: right;
       padding: 8px;
-      margin: 1px;
-      width: 200px;;
+      width: 100%;
       border-radius: 5px;
       text-align: right;
-      /* background-color: #e9edc9; */
+      color: rgb(251, 255, 231);
     }
     
     .reminder-left{
       float: left;
       padding: 8px;
-      margin: 1px;
-      width: 450px;;
+      width: 95%;
       border-radius: 5px;
       text-align: left;
-      
+      color: rgb(251, 255, 231);
+    
     }
     
     .header-reminder{
       text-align: center;
+      display: inline-block;
     }
     
-    .due-dates{
-      width: 500px;
-      text-align: center;
-      margin-left: 180px;
-      font-size: 25px;
-      
-    }
     .reminder-list {
       border-radius: 20px;
       padding: 40px;
@@ -514,24 +520,34 @@
       background-color: #515a47;
       border-radius: 20px;
       padding: 40px;
-      margin-bottom: 70px;
+      margin-left: auto;
+      margin-right: auto;    
       background-image: url("https://images.unsplash.com/photo-1620280929427-55fe6257cbff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBhZXN0aGV0aWN8ZW58MHx8MHx8&w=1000&q=80");
-      background-size: cover;
-      
+      background-size: cover; 
     }
   
     .reminder-container{
       display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: fit-content;
-      background-color: #7b8b33;
+      background-color: #7b8550;
       margin: 3px;
       border-radius: 20px;
     }
+    .reminder-rows {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 5px;
+      /* display: inline-block; */
+    }
 
     .reminder-header{
-      font-weight: bold;
+    font-weight: bold;
     font-size: 35px;
     background-color: #e9edc9;
     color: #8c9e4d;
@@ -541,6 +557,46 @@
     align-content: center;
     display: inline-block;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     text-shadow: 1px 2px #373a2c;
 
+    }
+
+    .dark {
+      color: #dcdcdc;
+      background-color: #292929;
+    }
+
+    .dark-mode-btn{
+      float: right;
+      margin-top: 5px ;
+      margin-right: 20px;
+      font-size: 40px;
+      font-weight: bold;
+      font-size: 50px;
+      border: none;
+      text-align: center;
+      color: #283618;
+      background-color: #92a381;
+      transition: .8s;
+    }
+
+    .dark-mode-btn:hover{
+      color: #e9edc9;
+    }
+
+
+    .center{
+      text-align: center;
+    }
+
+    iframe {
+      margin-top: 50px;
+    }
+
+    .daily-quote{
+      color:rgb(23, 31, 22);
+      font-size: 25px;
+      font-style: italic;
     }

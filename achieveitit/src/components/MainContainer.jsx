@@ -8,7 +8,7 @@ import Exercises from "./Exercises";
 import { Route, Switch } from 'react-router-dom';
 
 
-function MainContainer({ setCount, count, days }) {
+function MainContainer({ setCount, count, days, dateItem, forwardArrow, backArrow}) {
   const [tasks, setTasks] = useState([])
   const [quotes, setQuotes] = useState([])
   const [reminders, setReminders] = useState([])
@@ -16,6 +16,7 @@ function MainContainer({ setCount, count, days }) {
   const [exercises, setExercises] = useState([])
 
 // console.log(count)
+
 
   useEffect(() => {
     fetch(`http://localhost:8000/tasks`)
@@ -87,6 +88,9 @@ function MainContainer({ setCount, count, days }) {
 
         <Route path='/events'>
           <EventList 
+          dateItem={dateItem} 
+          forwardArrow={forwardArrow} 
+          backArrow={backArrow}
           setCount={setCount}
           count = {count}
           addNewEvent={addNewEvent}
@@ -103,17 +107,28 @@ function MainContainer({ setCount, count, days }) {
         </Route>
 
         <Route path="/exercises">
-          <Exercises exercises={exercises} />
+          <Exercises 
+          exercises={exercises}
+          setCount={setCount} 
+          count={count}
+          dateItem={dateItem} 
+          forwardArrow={forwardArrow} 
+          backArrow={backArrow}
+           />
         </Route>
 
         <Route path="/">
           <Home 
-          count = {count}
+          count={count}
           quotes={quotes}
           reminders={reminders}
           events={events}
           tasks={tasks}
           exercises={exercises}
+          dateItem={dateItem} 
+          forwardArrow={forwardArrow} 
+          backArrow={backArrow}
+          setCount={setCount}
            />
         </Route>
 

@@ -10,16 +10,8 @@ export default function EventItem({eventObj}) {
 
 
   return (
-  <div className="event-container">
-    <table className="event-table">
-        <td className="event-item">
-            <tr className="event"> {event}</tr>
-        </td>
-        {/* <td className="invisible">
-            <tr className="date">{dateItem}</tr>
-        </td> */}
-    </table>
-    <br/>
-  </div>
+  <>
+   <p className="event"> {event}</p>
+  </>
   );
 }
